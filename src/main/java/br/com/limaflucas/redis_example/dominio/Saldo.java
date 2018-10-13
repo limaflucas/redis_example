@@ -13,13 +13,9 @@ import lombok.NoArgsConstructor;
 @Data
 public class Saldo {
 
+    @ChaveRedis
     @JsonSerialize(using = ToStringSerializer.class)
     private int id;
     @JsonSerialize(using = ToStringSerializer.class)
     private Float valor;
-
-    @ChaveRedis
-    public int getId() {
-        return this.id;
-    }
 }
