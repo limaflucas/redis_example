@@ -24,8 +24,7 @@ public class Verificador {
 
         if (metodoAnotado == null)
             throw new IllegalArgumentException(String.format("Anotacao %s nao encontrada em %s", ChaveRedis.class.getSimpleName(), classe));
-
-        System.out.println(metodoAnotado);
+        
         return metodoAnotado;
     }
 }
